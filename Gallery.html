@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Modern Image Gallery</h1>
+            <p class="subtitle">A responsive gallery with filtering, lightbox viewing, and beautiful hover effects. Click on any image to view it in full screen.</p>
+        </header>
+        
+        <div class="controls">
+            <button class="filter-btn active" data-filter="all"><i class="fas fa-globe"></i> All Images</button>
+            <button class="filter-btn" data-filter="Laptop"><i class="fas fa-laptop"></i> Laptop</button>
+            <button class="filter-btn" data-filter="Smart phone"><i class="fas fa-mobile-android"></i> Smart phone</button>
+            <button class="filter-btn" data-filter="Phone"><i class="fas fa-mobile"></i> Phone</button>
+            <button class="filter-btn" data-filter="Tablet"><i class="fas fa-tablet-android"></i> Tablet</button>
+        </div>
+        
+        <div class="gallery">
+            
+        </div>
+        
+        <div class="lightbox">
+            <button class="close-btn">&times;</button>
+            <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            <div class="lightbox-content">
+                <img src="" alt="" class="lightbox-img">
+                <div class="lightbox-caption"></div>
+            </div>
+        </div>
+        <footer>
+            <p>Responsive Image Gallery with Lightbox | Created with HTML, CSS & JavaScript</p>
+        </footer>
+    </div>
+<script src="Galley.js"></script>
+</body>
+</html>
